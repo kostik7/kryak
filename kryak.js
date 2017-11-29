@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
         });
             var smileys_bar = "";
             for(key in smileys) {
-                  smileys_bar += key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" style="width:16px;height:16px;vertical-align: middle;" />';
+                  smileys_bar += '<div style="float:left;margin-right:10px;">' + key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" style="width:16px;height:16px;vertical-align: middle;" />' + '</div>';
             }
             jQuery("p.comment-footer").before("<div>Скопируйте смайлик в сообщение: " + smileys_bar + "</div>");
       });
