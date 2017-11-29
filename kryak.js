@@ -3,12 +3,12 @@ var smileys = {":)": "https://emojicodes.com/wp-content/uploads/2014/02/smile.pn
 jQuery(document).ready(function() {
         jQuery("li.comment p").each(function( index ) {
           for(key in smileys) {
-                jQuery(this).html(jQuery(this).html().replace(key, "<img src='" + smileys[key] + "' />"));
+                jQuery(this).html(jQuery(this).html().replace(key, "<img src='" + smileys[key] + "' style='vertical-align: middle;' />"));
           }
         });
             var smileys_bar = "";
             for(key in smileys) {
-                  smileys_bar += key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" />';
+                  smileys_bar += key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" style="vertical-align: middle;" />';
             }
             jQuery("p.comment-footer").before("<div>Скопируйте смайлик в сообщение: " + smileys_bar + "</div>");
       });
