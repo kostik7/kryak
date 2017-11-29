@@ -1,24 +1,24 @@
 var smileys = 
     {
      ":)": "https://emojicodes.com/wp-content/uploads/2014/02/smile.png",
-     ":(":"http://emojicodes.com/wp-content/uploads/2014/02/frown.png",
-     ":P":"http://emojicodes.com/wp-content/uploads/2014/02/tongue.png",
-     ":D":"http://emojicodes.com/wp-content/uploads/2014/02/grin.png",
-     ":O":"http://emojicodes.com/wp-content/uploads/2014/02/gasp.png", 
-     ";)":"http://emojicodes.com/wp-content/uploads/2014/02/wink.png",
-     "B-)":"http://emojicodes.com/wp-content/uploads/2014/02/glasses.png",
-     "B|":"http://emojicodes.com/wp-content/uploads/2014/02/sunglasses.png",
-     ">:(":"http://emojicodes.com/wp-content/uploads/2014/02/grumpy.png",
-     ":/":"http://emojicodes.com/wp-content/uploads/2014/02/unsure.png",
-     ":'(":"http://emojicodes.com/wp-content/uploads/2014/02/cry.png",
-     "3:)":"http://emojicodes.com/wp-content/uploads/2014/02/devil.png",
-     "O:)":"http://emojicodes.com/wp-content/uploads/2014/02/angel.png",
-     ":*":"http://emojicodes.com/wp-content/uploads/2014/02/kiss.png",
-     "<3":"http://emojicodes.com/wp-content/uploads/2014/02/heart.png",
-     "^_^":"http://emojicodes.com/wp-content/uploads/2014/02/kiki.png",
-     "-_-":"http://emojicodes.com/wp-content/uploads/2014/02/squint.png",
-     "o.O":"http://emojicodes.com/wp-content/uploads/2014/02/confused.png",
-     "(y)":"http://emojicodes.com/wp-content/uploads/2014/02/like.png"
+     ":(":"https://emojicodes.com/wp-content/uploads/2014/02/frown.png",
+     ":P":"https://emojicodes.com/wp-content/uploads/2014/02/tongue.png",
+     ":D":"https://emojicodes.com/wp-content/uploads/2014/02/grin.png",
+     ":O":"https://emojicodes.com/wp-content/uploads/2014/02/gasp.png", 
+     ";)":"https://emojicodes.com/wp-content/uploads/2014/02/wink.png",
+     "B-)":"https://emojicodes.com/wp-content/uploads/2014/02/glasses.png",
+     "B|":"https://emojicodes.com/wp-content/uploads/2014/02/sunglasses.png",
+     ">:(":"https://emojicodes.com/wp-content/uploads/2014/02/grumpy.png",
+     ":/":"https://emojicodes.com/wp-content/uploads/2014/02/unsure.png",
+     ":'(":"https://emojicodes.com/wp-content/uploads/2014/02/cry.png",
+     "3:)":"https://emojicodes.com/wp-content/uploads/2014/02/devil.png",
+     "O:)":"https://emojicodes.com/wp-content/uploads/2014/02/angel.png",
+     ":*":"https://emojicodes.com/wp-content/uploads/2014/02/kiss.png",
+     "<3":"https://emojicodes.com/wp-content/uploads/2014/02/heart.png",
+     "^_^":"https://emojicodes.com/wp-content/uploads/2014/02/kiki.png",
+     "-_-":"https://emojicodes.com/wp-content/uploads/2014/02/squint.png",
+     "o.O":"https://emojicodes.com/wp-content/uploads/2014/02/confused.png",
+     "(y)":"https://emojicodes.com/wp-content/uploads/2014/02/like.png"
     }
 
 jQuery(document).ready(function() {
@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
         });
             var smileys_bar = "";
             for(key in smileys) {
-                  smileys_bar += '<div style="float:left;margin-right:10px;border-right:1px solid #000000;">' + key + ' <img src="'+ smileys[key] + '" alt="' + key + '" style="width:16px;height:16px;vertical-align: middle;" />' + '</div>';
+                  smileys_bar += '<div style="float:left;margin-right:10px;">' + key + ' <img src="'+ smileys[key] + '" alt="' + key + '" style="width:16px;height:16px;vertical-align: middle;" />' + '</div>';
             }
             jQuery("p.comment-footer").before("<div><div>Скопируйте смайлик в сообщение:</div> " + smileys_bar + "</div>");
       });
