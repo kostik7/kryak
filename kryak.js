@@ -3,10 +3,11 @@ var smileys = {":)": "https://emojicodes.com/wp-content/uploads/2014/02/smile.pn
 var smileys_bar = "";
 
 for(key in smileys) {
-      smileys_bar += '<img src="'+ smileys[key] + '" alt="' + key + '" />'
+      smileys_bar += '<img src="'+ smileys[key] + '" alt="' + key + '" />';
 }
 
 function smileys_bar_func() {
+      console.log(jQuery("#commentsHolder").find("#smileys-bar").length);
         if(jQuery("#commentsHolder").find("#smileys-bar").length == 0) {
                 jQuery("#commentsHolder").prepend("<div id='smileys-bar'>' + smileys_bar + '</div>");
         }
