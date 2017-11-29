@@ -3,7 +3,7 @@ var smileys = {":)": "https://emojicodes.com/wp-content/uploads/2014/02/smile.pn
 var smileys_bar = "";
 
 for(key in smileys) {
-      smileys_bar += key - '<img src="'+ smileys[key] + '" alt="' + key + '" />';
+      smileys_bar += key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" />';
 }
 
 function smileys_bar_func() {
