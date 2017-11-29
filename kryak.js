@@ -7,8 +7,9 @@ for(key in smileys) {
 }
 
 function smileys_bar_func() {
+      console.log(999999);
         if(jQuery(".comment-replybox-single").find("#smileys-bar").length == 0) {
-              console.log(999999);
+              
                 jQuery(".comment-replybox-single").prepend("<div id='smileys-bar'>Скопируйте смайлик в сообщение: " + smileys_bar + "</div>");
         }
         
