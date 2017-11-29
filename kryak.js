@@ -19,8 +19,8 @@ var smileys =
      "-_-":"https://emojicodes.com/wp-content/uploads/2014/02/squint.png",
      "o.O":"https://emojicodes.com/wp-content/uploads/2014/02/confused.png",
      "(y)":"https://emojicodes.com/wp-content/uploads/2014/02/like.png",
-     "[[roxsign]]":"http://emojicodes.com/wp-content/uploads/2014/02/rox.png",
-     "[[notbaad]]":"http://emojicodes.com/wp-content/uploads/2014/02/notbad.png"
+     "[[roxsign]]":"https://emojicodes.com/wp-content/uploads/2014/02/rox.png",
+     "[[notbaad]]":"https://emojicodes.com/wp-content/uploads/2014/02/notbad.png"
     }
 
 jQuery(document).ready(function() {
