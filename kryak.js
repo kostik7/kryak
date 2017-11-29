@@ -24,12 +24,12 @@ var smileys =
 jQuery(document).ready(function() {
         jQuery("li.comment p").each(function( index ) {
           for(key in smileys) {
-                jQuery(this).html(jQuery(this).html().replace(smileys[key], "<img src='" + smileys[key] + "' style='width:16px;height:16px;vertical-align: middle;' />"));
+                jQuery(this).html(jQuery(this).html().replace(smileys[key], "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
           }
         });
             var smileys_bar = "";
             for(key in smileys) {
-                  smileys_bar += '<div style="float:left;margin-right:10px;">' + key + ' <img src="'+ smileys[key] + '" alt="' + key + '" style="width:16px;height:16px;vertical-align: middle;" />' + '</div>';
+                  smileys_bar += '<div style="float:left;margin-right:10px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
             }
             jQuery("p.comment-footer").before("<div><div>Перетащите смайлик в сообщение:</div> " + smileys_bar + "</div>");
       });
