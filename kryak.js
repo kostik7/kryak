@@ -8,6 +8,7 @@ for(key in smileys) {
 
 function smileys_bar_func() {
       console.log(jQuery("#commentsHolder").find("#smileys-bar").length);
+      console.log(777777777);
         if(jQuery("#commentsHolder").find("#smileys-bar").length == 0) {
                 jQuery("#commentsHolder").prepend("<div id='smileys-bar'>' + smileys_bar + '</div>");
         }
