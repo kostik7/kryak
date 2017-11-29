@@ -43,6 +43,6 @@ jQuery(document).ready(function() {
                 for(key in smileys) {
                       smileys_bar += '<div style="margin-right:5px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" /> ' + key +  '</div>';
                 }
-                jQuery("p.comment-footer").before("<div><div>Скопируйте смайлик в сообщение:</div> " + smileys_bar + "</div>");
+                jQuery("p.comment-footer").before("<div><div>Скопируйте код смайлика в сообщение:</div> " + smileys_bar + "</div>");
             }
       });
