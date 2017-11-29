@@ -26,7 +26,8 @@ var smileys =
 jQuery(document).ready(function() {
         jQuery("li.comment p").each(function( index ) {
           for(key in smileys) {
-                jQuery(this).html(jQuery(this).html().replace(/(key|smileys[key])/, "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
+                var s = smileys[key];
+                jQuery(this).html(jQuery(this).html().replace(/(key|s)/, "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
           }
         });
             var smileys_bar = "";
