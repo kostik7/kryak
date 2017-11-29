@@ -7,8 +7,6 @@ for(key in smileys) {
 }
 
 function smileys_bar_func() {
-      console.log(jQuery("#commentsHolder").find("#smileys-bar").length);
-      console.log(777777777);
         if(jQuery("#commentsHolder").find("#smileys-bar").length == 0) {
                 jQuery("#commentsHolder").prepend("<div id='smileys-bar'>" + smileys_bar + "</div>");
         }
@@ -25,5 +23,5 @@ jQuery(document).ready(function() {
           jQuery(this).html(jQuery(this).html().replace(":P", '<img src="http://emojicodes.com/wp-content/uploads/2014/02/tongue.png" />'));
         });
         
-        jQuery("a[kind='i']").click(function() {setTimeout(smileys_bar_func, 600);});
+        jQuery("a[kind='i']").click(function() {setTimeout(smileys_bar_func, 1500);});
       });
