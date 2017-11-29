@@ -27,6 +27,7 @@ jQuery(document).ready(function() {
         jQuery("li.comment p").each(function( index ) {
           for(key in smileys) {
                 jQuery(this).html(jQuery(this).html().replace(smileys[key], "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
+                jQuery(this).html(jQuery(this).html().replace(key, "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
           }
         });
             var smileys_bar = "";
@@ -40,7 +41,7 @@ jQuery(document).ready(function() {
             }
             else {
                 for(key in smileys) {
-                      smileys_bar += '<div style="float:left;margin-right:5px;">' + key + ' <img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
+                      smileys_bar += '<div style="float:left;margin-right:5px;">' + key + ' - <img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
                 }
                 jQuery("p.comment-footer").before("<div><div>Скопируйте смайлик в сообщение:</div> " + smileys_bar + "</div>");
             }
