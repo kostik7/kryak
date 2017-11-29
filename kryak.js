@@ -9,7 +9,6 @@ var smileys =
      "B-)":"//emojicodes.com/wp-content/uploads/2014/02/glasses.png",
      "B|":"//emojicodes.com/wp-content/uploads/2014/02/sunglasses.png",
      ">:(":"//emojicodes.com/wp-content/uploads/2014/02/grumpy.png",
-     ":/":"//emojicodes.com/wp-content/uploads/2014/02/unsure.png",
      ":'(":"//emojicodes.com/wp-content/uploads/2014/02/cry.png",
      "3:)":"//emojicodes.com/wp-content/uploads/2014/02/devil.png",
      "O:)":"//emojicodes.com/wp-content/uploads/2014/02/angel.png",
@@ -27,7 +26,7 @@ jQuery(document).ready(function() {
         jQuery("li.comment p").each(function( index ) {
           for(key in smileys) {
                 jQuery(this).html(jQuery(this).html().replace(smileys[key], key));
-                jQuery(this).html(jQuery(this).html().replace(key, "<img src='" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
+                jQuery(this).html(jQuery(this).html().replace(key, "<img src='https:" + smileys[key] + "' style='width:20px;height:20px;vertical-align: middle;' />"));
           }
         });
             var smileys_bar = "";
