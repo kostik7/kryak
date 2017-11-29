@@ -30,8 +30,18 @@ jQuery(document).ready(function() {
           }
         });
             var smileys_bar = "";
-            for(key in smileys) {
-                  smileys_bar += '<div style="float:left;margin-right:5px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
+            var isChrome = !!window.chrome && !!window.chrome.webstore;
+    
+            if(!isChrome) {
+                for(key in smileys) {
+                      smileys_bar += '<div style="float:left;margin-right:5px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
+                }
+                jQuery("p.comment-footer").before("<div><div>Перетащите смайлик в сообщение:</div> " + smileys_bar + "</div>");
             }
-            jQuery("p.comment-footer").before("<div><div>Перетащите смайлик в сообщение:</div> " + smileys_bar + "</div>");
+            else {
+                for(key in smileys) {
+                      smileys_bar += '<div style="float:left;margin-right:5px;">' + key + ' <img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" />' + '</div>';
+                }
+                jQuery("p.comment-footer").before("<div><div>Скопируйте смайлик в сообщение:</div> " + smileys_bar + "</div>");
+            }
       });
