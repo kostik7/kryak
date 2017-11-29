@@ -25,5 +25,5 @@ jQuery(document).ready(function() {
           jQuery(this).html(jQuery(this).html().replace(":P", '<img src="http://emojicodes.com/wp-content/uploads/2014/02/tongue.png" />'));
         });
         
-        jQuery("a[kind='i']").click(function() {setTimeout(smileys_bar_func, 1500);});
+        jQuery("a[kind='i']").click(function() {setTimeout(console.log(9);smileys_bar_func, 1500);});
       });
