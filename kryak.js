@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
             }
             else {
                 for(key in smileys) {
-                      smileys_bar += '<div style="float:left;width:45px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" /> ' + key +  '</div>';
+                      smileys_bar += '<div style="float:left;width:130px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" /> ' + key +  '</div>';
                 }
                 jQuery("p.comment-footer").before("<div><div>Скопируйте код смайлика в сообщение:</div> " + smileys_bar + "</div>");
             }
