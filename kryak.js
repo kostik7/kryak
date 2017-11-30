@@ -17,9 +17,7 @@ var smileys =
      "^_^":"https://emojicodes.com/wp-content/uploads/2014/02/kiki.png",
      "-_-":"https://emojicodes.com/wp-content/uploads/2014/02/squint.png",
      "o.O":"https://emojicodes.com/wp-content/uploads/2014/02/confused.png",
-     "(y)":"https://emojicodes.com/wp-content/uploads/2014/02/like.png",
-     "[[roxsign]]":"https://emojicodes.com/wp-content/uploads/2014/02/rox.png",
-     "[[notbaad]]":"https://emojicodes.com/wp-content/uploads/2014/02/notbad.png"
+     "(y)":"https://emojicodes.com/wp-content/uploads/2014/02/like.png"
     }
 
 jQuery(document).ready(function() {
@@ -40,7 +38,7 @@ jQuery(document).ready(function() {
             }
             else {
                 for(key in smileys) {
-                      smileys_bar += '<div style="margin-right:5px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" /> ' + key +  '</div>';
+                      smileys_bar += '<div style="float:left;margin-right:35px;"><img src="'+ smileys[key] + '" alt="' + key + '" style="width:20px;height:20px;vertical-align: middle;" /> ' + key +  '</div>';
                 }
                 jQuery("p.comment-footer").before("<div><div>Скопируйте код смайлика в сообщение:</div> " + smileys_bar + "</div>");
             }
